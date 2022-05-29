@@ -21,6 +21,11 @@ CREATE TABLE IF NOT EXISTS 'cart_item' (
   PRIMARY KEY ('id')
 ) ENGINE=InnoDB;
 
+INSERT INTO `users` (`id`, `nome`, `cognome`, `username`, `password`, `email`) VALUES ('1', 'Simone', 'Scalora', 'simoscalo', '1234', 'simoscalo@gmail.com'),
+('2', 'Pape', 'Rino', 'paperino', '5678', 'paperino@gmail.com'),
+('3', 'Filippo', 'Filippi', 'fili', 'asdfghj', 'fili@gmail.com'),
+('4', 'Pluto', 'Pluti', 'pluto', '1234', 'pluto@gmail.com');
+
 INSERT INTO `cart_item` (`id`, `name`, `description`, `price`, `image`, `category_id`) VALUES ('1', 'Apple Iphone 13 128GB Mezzanotte', 'Penta Band - 5G - Wi-Fi - GPS', '829', 'iphone13.png', '2'), 
 ('2', 'Samsung Galaxy A52 13 128GB Black', 'Quadri Band - 5G - Wi-Fi - GPS', '289', 'galaxya52.png', '1'),
 ('3', 'Apple Iphone 11 128GB Nero', 'Display Liquid Retina HD 6,1\"', '599', 'iphone11.png', '2'), 
